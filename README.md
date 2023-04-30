@@ -38,7 +38,7 @@ Building APIs with django is easy. It has the Django REST framework.
 
 **Model** - Data Access Layer (How we model data with the data base). Data base tables built out with classes
 **Templates** - Presentation Layer. This is what the user sees (Web page)
-**sView** - Business logic.
+**View** - Business logic.
 MVT design pattern is very similar to MVC
 
 ## Django Installation and Setup
@@ -75,5 +75,9 @@ MVT design pattern is very similar to MVC
 
 ### Run the server
 
-- cd to the django project: cd < project_name >
+- cd to the django project: _cd < project_name >_
 - Run the server: _python manage.py runserver_
+- Open url in the browser
+- To turn off server: _ctr c_
+
+## Django Project Files
