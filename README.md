@@ -59,3 +59,21 @@ MVT design pattern is very similar to MVC
 
 - **To install Django** (pip install django) (while in the virtual environment)
 - **To check django list of command:** _django-admin_
+
+### Some Django commands
+
+- _makemigrations_: Prepares the Database for for migrations
+- _migrate_: executes the above migrations (Takes the migrations created and executes them when we design our database) (Creates the database tables)
+- _runserver_: turns on the server
+- _startproject_: creates a django project
+- _startapp_: create apps
+
+### Create the django project
+
+- After installing django, create the django project: django-admin startproject < project_name >
+- The above creates files for our django project
+
+### Run the server
+
+- cd to the django project: cd < project_name >
+- Run the server: _python manage.py runserver_
