@@ -47,10 +47,15 @@ MVT design pattern is very similar to MVC
 - Select part on a computer (folder) where you want to install
 - Install Django. First create a **virtual environment** and download Django into the virtual environment
 - Virtual environment is a way of creating different environments for all of our downloads and installs so that we do not have any conflicts with our projects
-- **pip list** shows all the python packages available grobally or in a chosen virtual environment
+- _(pip list)_ shows all the python packages available grobally or in a chosen virtual environment
 - Virtual environments helps in projects management (Being updated with the latest versions of django) keeping the projects which worked with the other versions. To avoid conflicts when installed globally
 
-- **pip install virtualenv** (Package for installing virtual environments)
+- **To install virtual environment:** _pip install virtualenv_ Package for installing virtual environments
 
-- **To Create a Virtual Environment:** virtualenv < virtual_environment_name >
-- Start/activate the virtual environment (bash terminal): source < virtual_environment_name >/Scripts/activate
+- **To Create a Virtual Environment:** _virtualenv < virtual_environment_name >_
+- Start/activate the virtual environment (bash terminal): _source < virtual_environment_name >/scripts/activate_
+- To deactivate the virtual environment: \_deactivate_s
+- _pip list_ - shows all the list of packages installed in that environment
+
+- **To install Django** (pip install django) (while in the virtual environment)
+- **To check django list of command:** _django-admin_
