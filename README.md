@@ -37,6 +37,20 @@ Building APIs with django is easy. It has the Django REST framework.
 <img src="Resources/Mvt.png" alt= "MVT Design Pattern" width="6s00" />
 
 **Model** - Data Access Layer (How we model data with the data base). Data base tables built out with classes
-**Templates** - Presentation Layer. This is what the user sees (Web page) \n
-**View** - Business logic.
+**Templates** - Presentation Layer. This is what the user sees (Web page)
+**sView** - Business logic.
 MVT design pattern is very similar to MVC
+
+## Django Installation and Setup
+
+- Install python (From python.org)
+- Select part on a computer (folder) where you want to install
+- Install Django. First create a **virtual environment** and download Django into the virtual environment
+- Virtual environment is a way of creating different environments for all of our downloads and installs so that we do not have any conflicts with our projects
+- **pip list** shows all the python packages available grobally or in a chosen virtual environment
+- Virtual environments helps in projects management (Being updated with the latest versions of django) keeping the projects which worked with the other versions. To avoid conflicts when installed globally
+
+- **pip install virtualenv** (Package for installing virtual environments)
+
+- **To Create a Virtual Environment:** virtualenv < virtual_environment_name >
+- Start/activate the virtual environment (bash terminal): source < virtual_environment_name >/Scripts/activate
