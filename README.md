@@ -34,7 +34,7 @@ Building APIs with django is easy. It has the Django REST framework.
 
 ## MVT Design Pattern
 
-<img src="Resources/Mvt.png" alt= "MVT Design Pattern" width="6s00" />
+<img src="Resources/Mvt.png" alt= "MVT Design Pattern" width="600" />
 
 **Model** - Data Access Layer (How we model data with the data base). Data base tables built out with classes
 **Templates** - Presentation Layer. This is what the user sees (Web page)
