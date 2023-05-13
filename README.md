@@ -85,7 +85,7 @@ MVT design pattern is very similar to MVC
 **Manage.py** file: Helps execute django commands. Do not touch/modify the file unless you know what exactly you are doing
 **db.sqlite3** file: Sqlite database. Once we run the migrations, this is where our data will be stored until we change up our database e.g postgres
 **venv** folder: Is our virtual environment
-**devsearch** folder: Is our app folder.
+**devsearch** folder: Is our project folder.
 **Inside devsearch**
 **settings.py** file: This is the main project configuration for our entire django project. This is where we configure;
 
@@ -101,3 +101,7 @@ urlpatterns is a list. Takes care all the navigations for the site
 **asgi.py** file: asynchronous server gateway interface. Another option. Django gives asynch support now
 
 The two main files that we work with are; settings.py and urls.py
+
+## Creating an App
+
+<img src="Resources/Django_Apps.jpg" alt= "Django Apps" width="600" />
