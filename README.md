@@ -105,3 +105,29 @@ The two main files that we work with are; settings.py and urls.py
 ## Creating an App
 
 <img src="Resources/Django_Apps.jpg" alt= "Django Apps" width="600" />
+The actual functionality of websites sits inside of app
+In theory;
+facebook.com folder: Is the configuration, our settings, our urls
+The actual models templates urls and apis is going to be in the app e.g Groups App
+- A project is made up of multiple apps
+
+facebook.com is the project
+
+-   Forexample anythng surrounding users eg user login, is created in its own app called Users App; Takes on DB Models for users,
+    urls and templates
+
+### Creating an App
+
+We need atleast one app. Navigate to the projects folder
+
+-   _python manage.py startapp <app_name>_
+-   app_name folder is created with the following files
+    **modes.py** file: This is where we create our database tables
+    **views.py** file: This where the business logic will take place. The functions that will be triggered when the urls are activated
+    **admin.py** file: Help us to configure our admin pannel
+    **apps.py** file: The main apps configuration
+-   Register the app that we created with our project in settings.py (installed*apps)
+    e.g \_projects.apps.ProjectsConfig*
+    projects - app folder
+    apps.py - apps file
+    ProjectsConfig - class
