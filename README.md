@@ -81,3 +81,23 @@ MVT design pattern is very similar to MVC
 -   To turn off server: _ctr c_
 
 ## Django Project Files
+
+**Manage.py** file: Helps execute django commands. Do not touch/modify the file unless you know what exactly you are doing
+**db.sqlite3** file: Sqlite database. Once we run the migrations, this is where our data will be stored until we change up our database e.g postgres
+**venv** folder: Is our virtual environment
+**devsearch** folder: Is our app folder.
+**Inside devsearch**
+**settings.py** file: This is the main project configuration for our entire django project. This is where we configure;
+
+-   Any apps that we add (Installed_apps)
+-   Our middleware (Middleware)
+-   Our templates (Templates)
+-   Our Databases (Databases)
+
+**urls.py** file: This is our url navigation for our entire application. This is what determines what url users go to.
+urlpatterns is a list. Takes care all the navigations for the site
+
+**wsgi.py** file: Stands for web server gateway interface. We do not worry much about it.
+**asgi.py** file: asynchronous server gateway interface. Another option. Django gives asynch support now
+
+The two main files that we work with are; settings.py and urls.py
