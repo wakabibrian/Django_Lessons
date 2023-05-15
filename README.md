@@ -148,3 +148,10 @@ Once it finds a pattern, it triggers a  function e.g returnAboutPage() and displ
 -   Create a path in the pathpatterns to trigger the function
 -   Inside the pathpatterns, pass in; the path, function created and name of the path
 -   When the function is triggered it returns data to the user
+
+### How to pass in dynamic data into the projects.
+
+-   This is common when you visit a url and find in a dynamic data e.g id
+-   On the path, use angle brackets, use a str value (variable type) for the id (3 options; str, int or slug).
+-   After the variable type, put Colon, and variable name: str:pk. (pk - primary key)
+-   Add the variable name in parameters for the path function
