@@ -131,3 +131,20 @@ We need atleast one app. Navigate to the projects folder
     projects - app folder
     apps.py - apps file
     ProjectsConfig - class
+
+## Views and Urls
+
+_urls.py_ file has a urls list and is in charge of the url routing system of our entire application.
+
+<img src="Resources/urls_and_views.jpg" alt= "Django Apps" width="600" />
+paths - urlpatterns
+If it doesn't find a pattern it throws an error
+Once it finds a pattern, it triggers a  function e.g returnAboutPage() and displays an html data from that function
+
+### Creating urls
+
+-   You create a function and pass in http request as a parameter
+-   The function should return data e.g html data or httpResponse
+-   Create a path in the pathpatterns to trigger the function
+-   Inside the pathpatterns, pass in; the path, function created and name of the path
+-   When the function is triggered it returns data to the user
