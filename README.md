@@ -170,3 +170,14 @@ This is helpful in bigger projects
 -   Connect the app urlpatterns for the app to the root url list file
 -   inside the root urls.py file; import include from the django.urls module
 -   Then use path("", include("projects.urls")) to include all projects app urls to the root
+
+## Templates and Template Inheritance
+
+-   Helps in rendering out an html page
+-   Create a folder (in root directory) to store the templates and let django know where to find the
+    templates and how to render them inside the views
+-   Create html files for the different pages
+-   Connect the html files (letting django to know where to find them) in settings file in the templates variables, in dirs. First import the os module to join the path with BASE_DIR e.g os.path.join(BASE_DIR, "templates")
+-   Go to views.py file and use the render method e.g render(request, "projects.html")
+
+### Connecting navbar template (constant for all pages)
