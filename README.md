@@ -149,9 +149,24 @@ Once it finds a pattern, it triggers a  function e.g returnAboutPage() and displ
 -   Inside the pathpatterns, pass in; the path, function created and name of the path
 -   When the function is triggered it returns data to the user
 
-### How to pass in dynamic data into the projects.
+### How to pass in dynamic data into the projects (creating a dynamic route)
 
 -   This is common when you visit a url and find in a dynamic data e.g id
 -   On the path, use angle brackets, use a str value (variable type) for the id (3 options; str, int or slug).
 -   After the variable type, put Colon, and variable name: str:pk. (pk - primary key)
 -   Add the variable name in parameters for the path function
+
+## Separating views (urls functions) from the urls file
+
+This is helpful in bigger projects
+
+-   The app e.g projects app should take care of any view(url) that deals with projects
+-   This should be in the _views.py_ file. which stores all the views for a created app
+-   Also, remove the routes (urls) associated with that app from the _root urls file_.
+-   Create a new file in the created app, e.g projects app folder. Create the _urls.py_ file
+-   import the path module from the django.urls module
+-   Create a list of urls inside the urlpatterns list
+-   import the views file and url functions inside the urls.py file
+-   Connect the app urlpatterns for the app to the root url list file
+-   inside the root urls.py file; import include from the django.urls module
+-   Then use path("", include("projects.urls")) to include all projects app urls to the root
