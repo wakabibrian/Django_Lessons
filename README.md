@@ -216,3 +216,17 @@ This is helpful in bigger projects
 - In the root templates folder folder, leave only templates which are not specific to an app, that will be used in all apps
 
 ## Rendering Data to Templates
+How django renders content;
+
+**Variables**
+{{ some_var }} - this is how we pass in variables into our template e.g how to access an object {{ my_dict.key }} 
+
+**Tags**
+This is a way of adding python like logic to our project. 
+- Writing if conditions, for-loops, else statements
+e.g
+{% if user.is_authenticated %}Hello, {{ user.username }}.{% endif %}
+You have to close the tags
+
+**Filters**
+{{ django|title }}
