@@ -177,7 +177,14 @@ This is helpful in bigger projects
 -   Create a folder (in root directory) to store the templates and let django know where to find the
     templates and how to render them inside the views
 -   Create html files for the different pages
--   Connect the html files (letting django to know where to find them) in settings file in the templates variables, in dirs. First import the os module to join the path with BASE_DIR e.g os.path.join(BASE_DIR, "templates")
+-   Connect the html files (letting django to know where to find them) in settings file in the
+    templates variables, in dirs. First import the os module to join the path with BASE_DIR e.g os.path.join(BASE_DIR, "templates")
 -   Go to views.py file and use the render method e.g render(request, "projects.html")
 
 ### Connecting navbar template (constant for all pages)
+
+-   Create the html page in the templates folder
+-   Use include in in other files to connect the page {% include "navbar.html" %}
+-   Use the include in the separate page e.g main.html
+-   The main.html page should be inherited by other pages and the navbar will be on all the pages
+    that inherit
