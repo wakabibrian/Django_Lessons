@@ -184,7 +184,24 @@ This is helpful in bigger projects
 ### Connecting navbar template (constant for all pages)
 
 -   Create the html page in the templates folder
--   Use include in in other files to connect the page {% include "navbar.html" %}
+-   Use include in other files to connect the page {% include "navbar.html" %}
 -   Use the include in the separate page e.g main.html
 -   The main.html page should be inherited by other pages and the navbar will be on all the pages
     that inherit
+-   _{% include "navbar.html" %}_ includes another page inside another page. We take the navbar.html template and include it inside of another template. Read below for more explanation
+
+### Extending a template
+
+-   We build one main theme, style that theme and modify content depending on what's going on on each page
+-   For example we can use main.html page to format all the pages.
+-   Whatever you include in the main.html page e.g title, navbar you dont have to modify it in all the pages.
+-   Any page that inherits from the main.html template will include the navbar, title and any styling
+-   Use opening and closing block tags to specify where the child content should go.
+    _{% block content%} {% endblock content%}_
+-   Once any page extends/inherits the main.html page e.g projects page, the content will stay inside the block tags
+
+**To extend the page inside the child pages**
+
+-   Child pages extending the parent page
+    use {%extends "main.html"%}
+- Then tell where you what the child content to be with the _{% block content%} {% endblock content%}_
