@@ -214,3 +214,5 @@ This is helpful in bigger projects
 - Inside the templates folder, create another folder named your app name, e.g projects
 - Grab all the projects template related to that folder
 - In the root templates folder folder, leave only templates which are not specific to an app, that will be used in all apps
+
+## Rendering Data to Templates
