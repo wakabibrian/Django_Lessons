@@ -1,7 +1,15 @@
-{% extends "main.html" %} 
+<!-- prettier-ignore -->
+{% extends "main.html" %}
 
 {% block content %}
 
+<p>Hello, you are on the {{page}} page</p>
+
+{% if number > 10 %}
+<p>Number is greater than 10</p>
+{% else %}
+<p>Number is less than 10</p>
+{% endif %}
 <h1>Projects Template</h1>
 <p>
     It is a long established fact that a reader will be distracted by the
