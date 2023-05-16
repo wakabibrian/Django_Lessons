@@ -205,3 +205,12 @@ This is helpful in bigger projects
 -   Child pages extending the parent page
     use {%extends "main.html"%}
 - Then tell where you what the child content to be with the _{% block content%} {% endblock content%}_
+- The above helps us not to rewrite a bunch of content
+
+### How to separate templates
+- Use the built in django way to  work  with apps
+- Separate according to apps for example anything to do with projects, will be projects app, users will be in users app
+- E.g inside the projects app (folder), create a folder called templates
+- Inside the templates folder, create another folder named your app name, e.g projects
+- Grab all the projects template related to that folder
+- In the root templates folder folder, leave only templates which are not specific to an app, that will be used in all apps
