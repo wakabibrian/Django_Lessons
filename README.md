@@ -204,29 +204,57 @@ This is helpful in bigger projects
 
 -   Child pages extending the parent page
     use {%extends "main.html"%}
-- Then tell where you what the child content to be with the _{% block content%} {% endblock content%}_
-- The above helps us not to rewrite a bunch of content
+-   Then tell where you what the child content to be with the _{% block content%} {% endblock content%}_
+-   The above helps us not to rewrite a bunch of content
 
 ### How to separate templates
-- Use the built in django way to  work  with apps
-- Separate according to apps for example anything to do with projects, will be projects app, users will be in users app
-- E.g inside the projects app (folder), create a folder called templates
-- Inside the templates folder, create another folder named your app name, e.g projects
-- Grab all the projects template related to that folder
-- In the root templates folder folder, leave only templates which are not specific to an app, that will be used in all apps
+
+-   Use the built in django way to work with apps
+-   Separate according to apps for example anything to do with projects, will be projects app, users will be in users app
+-   E.g inside the projects app (folder), create a folder called templates
+-   Inside the templates folder, create another folder named your app name, e.g projects
+-   Grab all the projects template related to that folder
+-   In the root templates folder folder, leave only templates which are not specific to an app, that will be used in all apps
 
 ## Rendering Data to Templates
+
 How django renders content;
 
 **Variables**
-{{ some_var }} - this is how we pass in variables into our template e.g how to access an object {{ my_dict.key }} 
+{{ some_var }} - this is how we pass in variables into our template e.g how to access an object {{ my_dict.key }}
 
 **Tags**
-This is a way of adding python like logic to our project. 
-- Writing if conditions, for-loops, else statements
-e.g
-{% if user.is_authenticated %}Hello, {{ user.username }}.{% endif %}
-You have to close the tags
+This is a way of adding python like logic to our project.
+
+-   Writing if conditions, for-loops, else statements
+    e.g
+    {% if user.is_authenticated %}Hello, {{ user.username }}.{% endif %}
+    You have to close the tags
 
 **Filters**
 {{ django|title }}
+
+# Building The Database
+
+## Models and Admin Panel
+
+db.sqlite3 file is connected to settings.py file
+In the urls, the admin url cannot be accessed until we have the database ready
+Django has the db tables prepared for us.
+
+-   To apply the migrations (build the data base) run: _python manage.py migrate_
+-   The above builds some tables in the database
+
+### Admin Panel
+
+To access the admin panel; http://127.0.0.1:8000/admin
+The admin panel is simply a way to access the database
+
+We need to first create a user to login
+To create a user: _python manage.py createsuperuser_ then enter user details
+superuser - creates a user with top level permission
+
+Login into the admin panel with http://127.0.0.1:8000/admin to see all the tables we have in the database
+
+By default, django creates Groups and Users tables.
+You can add, delete and modify users
