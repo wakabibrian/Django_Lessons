@@ -280,3 +280,20 @@ We have to specify the different value types for the different table fields (att
 -   To change the default string in the database to a title create a method in models e.h
     def **str**(self):
     return self.title
+
+## Database Relationships
+
+-   You can use https://drawsql.app/ website to draw the database and list out all the tables that I want, show all the attributes in the tables and even connect the data that I can even visualize the database connections and the relationships e.g https://drawsql.app/teams/dennis-ivy/diagrams/dev-search
+-   Relationships are a way of connecting database tables
+
+### Types of relationships
+
+<img src="Resources/Relationships.jpg" alt= "Database Relationships" width="600" />
+
+1. One-to-one relationship: One table can be connected to another table and there can be only a one way relationship
+   Example: If we had a user model (storing basic user details like emails, passwords, etc) and we want to extend this model, add in like a profile picture, a bio link, instead of modifying a user model, we could just create another table and call it user profile, and connect it via one-to-one relationship. Meaning one user can have one profile and one profile can have one user.
+
+2. One-to-Many relationship (The most common): One table record can relate to many records in another table.
+   Example: A user profile can have multiple projects. If you create an account on a website, you should be able to have multiple projects e.g an Ecommerce website, a Social Network etc. There can be many projects connected to one profile
+
+3. Many-to-Many relationship: It means there is a two way relationship, e.g if we have some kind of tags e.g skills for a specific project e.g you created projects 1, 2, and 3 and these projects you have a tag for react, django and javascript. Project 1 and Project 2 can both have a tag of react. React can be connected to multiple projects while multiple projects can be connected to React or multiple tags.
