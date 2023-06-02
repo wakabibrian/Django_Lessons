@@ -258,3 +258,25 @@ Login into the admin panel with http://127.0.0.1:8000/admin to see all the table
 
 By default, django creates Groups and Users tables.
 You can add, delete and modify users
+
+### Django Models
+
+<img src="Resources/models.png" alt= "Django Models" width="600" />
+In Django we model our data using classes
+In models.py file (inside the app e.g projects), we create classes that are going to represent tables e.g in the above picture, we see a class called Projects, with attribute of title, description and id.
+When we create a class we inherit from models.Model which tells django that the class is officially a model not just a class.
+We have to specify the different value types for the different table fields (attributes) e.g IntField, TextField, CharField etc.
+
+**To Create Models**
+
+-   Go to the app e.g projects
+-   Go to models.py and create the class as above picture
+-   To add the created models class onto tables, run _python manage.py makemigrations_ (Prep migrations). This creates a new file in migrations folder which includes our created fields
+-   Now we to execute the migrations (add to the database) (each time we add a new field) _python manage.py migrate_
+-   To see the created table, we need to register the model with the admin panel
+-   Go to apps e.g projects, go to admin.py file
+-   Import the model e.g from .models import Project
+-   Register the model e.g admin.site.register(Project)
+-   To change the default string in the database to a title create a method in models e.h
+    def **str**(self):
+    return self.title
