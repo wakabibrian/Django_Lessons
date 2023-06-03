@@ -340,4 +340,6 @@ We have to specify the different value types for the different table fields (att
 -   lte - less than or equal to
 -   lte - less than or equal to
 
+### Querysets example Applied.
+
 <img src="Resources/Queyset_example.png" alt= "Query Set" width="800" />
