@@ -332,3 +332,12 @@ We have to specify the different value types for the different table fields (att
 ### List of Querysets example.
 
 <img src="Resources/QuerysetsList.png" alt= "Query Set" width="800" />
+
+-   The above is in the views.py file
+-   icontain - ignore the case sensitivity
+-   gt - greater than
+-   gte - greater than or equal to
+-   lte - less than or equal to
+-   lte - less than or equal to
+
+<img src="Resources/Queyset_example.png" alt= "Query Set" width="800" />
