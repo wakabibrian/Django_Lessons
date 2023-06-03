@@ -331,6 +331,4 @@ We have to specify the different value types for the different table fields (att
 
 ### List of Querysets example.
 
-<img src="Resources/QuerysetsList.png" alt= "Query Set" width="600" />
-
-
+<img src="Resources/QuerysetsList.png" alt= "Query Set" width="800" />
