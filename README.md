@@ -297,3 +297,11 @@ We have to specify the different value types for the different table fields (att
    Example: A user profile can have multiple projects. If you create an account on a website, you should be able to have multiple projects e.g an Ecommerce website, a Social Network etc. There can be many projects connected to one profile
 
 3. Many-to-Many relationship: It means there is a two way relationship, e.g if we have some kind of tags e.g skills for a specific project e.g you created projects 1, 2, and 3 and these projects you have a tag for react, django and javascript. Project 1 and Project 2 can both have a tag of react. React can be connected to multiple projects while multiple projects can be connected to React or multiple tags.
+
+**One-to-Many relationship**
+<img src="Resources/One-to-Many.jpg" alt= "One to Many Relationships" width="600" />
+
+-   A Project has multiple reviews
+-   We will have a Projects table with attributes id, title and Description and a Reviews table with attributes id, and Body (actual review).
+-   How we connect these tables is by automatically generating or manually creating another column for Parent_ID.
+-   The above case, a parent is the Project. Once a review is created, you give it it's parent ID e.g project with ID 1 has two reviews
